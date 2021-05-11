@@ -1,0 +1,31 @@
+How to set up mscrbabycreateadv on Linux
+
+This guide will show you how to setup mscrbabycreateadv on Linux, and how to configure it to your own liking.
+
+1. Required software
+Several software are required for using the tool.
+    -git
+    -php
+    -apache2
+
+Install them with your package manager of you choice.
+Ubuntu/Debian:
+    sudo apt-get install git php apache2
+Arch Linux:
+    sudo pacman -S git php apache2
+
+2. Getting the files
+Clone files from the github repository:
+    git clone https://github.com/nycr1te/mscrbabycreateadv.git
+After that, start the apache2 service
+    sudo service apache2 start
+*Commands to start apache might be different based on your distro.
+
+3. Installing
+Now, move the tool to the server's folder:
+    sudo mv mscrbabycreateadv /var/www/html
+Enter your password if nessacary.
+The tool is now setup! For testing, go to localhost/mscrbabycreateadv to see the tool working.
+
+4. Configuring
+Follow the steps in README.md to configure your tool.
